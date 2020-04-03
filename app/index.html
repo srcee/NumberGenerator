@@ -1,10 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html lang="en" ng-app="myApp" class="no-js">
-<!--<![endif]-->
+<html lang="en" ng-app="numberGenerator" class="no-js">
 
 <head>
   <meta charset="utf-8">
@@ -20,10 +15,10 @@
 
 <body>
   <ul class="menu">
-    <li><a href="#!/home">HOME</a></li>
-    <li><a href="#!/create">Create new number generator</a></li>
-    <li><a href="#!/list">List of existing number generators</a></li>
-    <li><a href="#!/num-view">All generated numbers</a></li>
+    <li><a href="#/">HOME</a></li>
+    <li><a href="#/create">Create new number generator</a></li>
+    <li><a href="#/list">List of existing number generators</a></li>
+    <li><a href="#/num-view">All generated numbers</a></li>
   </ul>
 
   <div ng-view></div>
@@ -31,11 +26,11 @@
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
-  <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
-  <script src="core/version/version.js"></script>
-  <script src="core/version/version-directive.js"></script>
-  <script src="core/version/interpolate-filter.js"></script>
+  <script src="home/home.js"></script>
+  <script src="nums-view/nums.js"></script>
+  <script src="number-generator/create/create.js"></script>
+  <script src="number-generator/list/list.js"></script>
+  <script src="generator-service/generatorService.js"></script>
 </body>
 
 </html>
